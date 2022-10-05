@@ -9,6 +9,7 @@ import Foundation
 
 class DataController: ObservableObject {
     let container = NSPersistentContainer(name: "CoreDataProject")
+    //"CoreDataProject" name should match your .xcdatamodeld file name
     
     init() {
         container.loadPersistentStores { description, error in
